@@ -13,7 +13,14 @@ class BaseTabbarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.addChildVC()
+        tabbarConfig()
+    }
+    
+    private func tabbarConfig(){
+        addChildVC()
+        
+        self.tabBar.isTranslucent = false
+        self.tabBar.barTintColor = UIColor.yellow
     }
     
     private func addChildVC() {
@@ -46,7 +53,7 @@ class BaseTabbarController: UITabBarController {
         
         let items = [mainNav,markNav,tradeNav,otherNav,meNav]
         self.viewControllers = items
-        self.tabBar.barTintColor = UIColor.clear
-        self.tabBar.backgroundColor = UIColor.red
+        
+        self.tabBar.tintColor = UIColor.orange
     }
 }

@@ -8,14 +8,28 @@
 
 import UIKit
 
-class HomeMainVC: BaseViewController {
+class a{
+    lazy var num = number()
+}
 
+class number {
+    var count = 10
+}
+
+class HomeMainVC: BaseViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
+        let springClass = SpringAnimate()
+        let view_Back = springClass.springAnimateInit(view: self.view)
+        self.view.addSubview(view_Back)
     }
-    
-
-
 }
+
+
+
+
+
+
+
+

@@ -14,6 +14,7 @@
 		8107B8052271458A0054CB1D /* Swift_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8107B8042271458A0054CB1D /* Swift_DemoTests.swift */; };
 		8107B8102271458A0054CB1D /* Swift_DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8107B80F2271458A0054CB1D /* Swift_DemoUITests.swift */; };
 		8107B82A227147120054CB1D /* BaseTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8107B829227147120054CB1D /* BaseTabbarController.swift */; };
+		814EE11A227E801F0068F765 /* AnimateTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814EE119227E801F0068F765 /* AnimateTool.swift */; };
 		81CFB0412273048200701D12 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CFB0402273048200701D12 /* BaseViewController.swift */; };
 		81CFB0432273049900701D12 /* HomeMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CFB0422273049900701D12 /* HomeMainVC.swift */; };
 		81CFB045227304A600701D12 /* MarkMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CFB044227304A600701D12 /* MarkMainVC.swift */; };
@@ -60,6 +61,7 @@
 		8107B80F2271458A0054CB1D /* Swift_DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_DemoUITests.swift; sourceTree = "<group>"; };
 		8107B8112271458A0054CB1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8107B829227147120054CB1D /* BaseTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabbarController.swift; sourceTree = "<group>"; };
+		814EE119227E801F0068F765 /* AnimateTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimateTool.swift; sourceTree = "<group>"; };
 		81CFB0402273048200701D12 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		81CFB0422273049900701D12 /* HomeMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMainVC.swift; sourceTree = "<group>"; };
 		81CFB044227304A600701D12 /* MarkMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkMainVC.swift; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 		8107B823227146230054CB1D /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				814EE113227E7FE50068F765 /* Animate */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -394,6 +397,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		814EE113227E7FE50068F765 /* Animate */ = {
+			isa = PBXGroup;
+			children = (
+				814EE119227E801F0068F765 /* AnimateTool.swift */,
+			);
+			path = Animate;
+			sourceTree = "<group>";
+		};
 		81CFB03F2273047200701D12 /* BaseViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -532,6 +543,7 @@
 				TargetAttributes = {
 					8107B7EB227145890054CB1D = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					8107B7FF2271458A0054CB1D = {
 						CreatedOnToolsVersion = 10.1;
@@ -706,6 +718,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81CFB049227304C200701D12 /* MeMainVC.swift in Sources */,
+				814EE11A227E801F0068F765 /* AnimateTool.swift in Sources */,
 				8107B82A227147120054CB1D /* BaseTabbarController.swift in Sources */,
 				8107B7F0227145890054CB1D /* AppDelegate.swift in Sources */,
 				81CFB047227304B500701D12 /* TradeMainVC.swift in Sources */,
@@ -880,6 +893,7 @@
 			baseConfigurationReference = 0E2EEAF9B81BEC2973A96EF2 /* Pods-Swift_Demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Swift_Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -888,6 +902,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.xwjyw.feng.Swift-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -898,6 +913,7 @@
 			baseConfigurationReference = 402812CB77BDB3C44D3AA40B /* Pods-Swift_Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Swift_Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
