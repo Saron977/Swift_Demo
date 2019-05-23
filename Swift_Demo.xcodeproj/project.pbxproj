@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3ED1C4973A0EB64311FA6087 /* Pods_Swift_DemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D34DB027E635B774661BB3F9 /* Pods_Swift_DemoTests.framework */; };
 		470CB24193BC4020BA9DBE6D /* Pods_Swift_DemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 814DB1ED22927470008584A9 /* Pods_Swift_DemoTests.framework */; };
+		534971BDEFAACBD781B1E159 /* Pods_Swift_DemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 814D073122967BBE009B0C9E /* Pods_Swift_DemoTests.framework */; };
+		733B6FDBAC9E241CDF72D1B4 /* Pods_Swift_DemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 814D073322967BBE009B0C9E /* Pods_Swift_DemoUITests.framework */; };
 		8107B7F0227145890054CB1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8107B7EF227145890054CB1D /* AppDelegate.swift */; };
 		8107B7F72271458A0054CB1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8107B7F62271458A0054CB1D /* Assets.xcassets */; };
 		8107B7FA2271458A0054CB1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8107B7F82271458A0054CB1D /* LaunchScreen.storyboard */; };
@@ -156,6 +158,7 @@
 			files = (
 				3ED1C4973A0EB64311FA6087 /* Pods_Swift_DemoTests.framework in Frameworks */,
 				470CB24193BC4020BA9DBE6D /* Pods_Swift_DemoTests.framework in Frameworks */,
+				534971BDEFAACBD781B1E159 /* Pods_Swift_DemoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,6 +168,7 @@
 			files = (
 				9BF2C394CD66A4E1E5E29E76 /* Pods_Swift_DemoUITests.framework in Frameworks */,
 				A6CC2E2623FF28798ABBD655 /* Pods_Swift_DemoUITests.framework in Frameworks */,
+				733B6FDBAC9E241CDF72D1B4 /* Pods_Swift_DemoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
