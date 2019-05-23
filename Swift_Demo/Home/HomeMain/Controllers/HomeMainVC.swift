@@ -7,29 +7,73 @@
 //
 
 import UIKit
+import Moya
+import RxSwift
+import RxCocoa
+import Result
+import SnapKit
 
-class a{
-    lazy var num = number()
-}
-
-class number {
-    var count = 10
-}
 
 class HomeMainVC: BaseViewController {
+   
+    let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let springClass = SpringAnimate()
-        let view_Back = springClass.springAnimateInit(view: self.view)
-        self.view.addSubview(view_Back)
+
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        loadData()
+        
+//        loadData { (success) in
+//            if success{
+//                print("成功")
+//            }else{
+//                print("失败")
+//            }
+//        }
+
+    }
+   
+    func loadData() {
+        HTTP_Provider.rx.request(.HomePage).filterSuccessfulStatusCodes().asObservable().mapModel(_type: HomeModel .self).subscribe { (event) in
+            if let model = event.element{
+                print(model)
+            }else{
+                print("当前事件:\(event)")
+            }
+        }
+//        HTTP_Provider.request(.HomePage, callbackQueue: nil, progress: nil) { (result) in
+//            switch result{
+//            case let .success(result):
+//                do{
+//                    try print(result.mapJSON())
+//                }catch{
+//                    print(MoyaError.jsonMapping(result))
+//                }
+//            case let .failure(error):
+//                print(error)
+//            }
+//        }
+    }
+    
+//    func loadData(reqResult:(_ success: Bool) -> Void) {
+//        HTTP_Provider.request(HttpApiManager.HomePage, callbackQueue: nil, progress: nil) { (result) in
+//            switch result{
+//            case let .success(result):
+//                do {
+//                try print(result.mapJSON())
+//                }catch{
+//                    print(MoyaError.jsonMapping(result))
+//                }
+//                break
+//
+//            case .failure(_): break
+//
+//            }
+//        }
+//    }
+
 }
-
-
-
-
-
-
-
-
