@@ -18,6 +18,7 @@
 		8107B8102271458A0054CB1D /* Swift_DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8107B80F2271458A0054CB1D /* Swift_DemoUITests.swift */; };
 		8107B82A227147120054CB1D /* BaseTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8107B829227147120054CB1D /* BaseTabbarController.swift */; };
 		814165DC228D5C2A001CABD5 /* HTTPRequset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814165DB228D5C2A001CABD5 /* HTTPRequset.swift */; };
+		8146A9C7229779EA008A21E4 /* MacroTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8146A9C6229779E9008A21E4 /* MacroTool.swift */; };
 		814D072A22967B97009B0C9E /* Pods_Swift_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 814D072922967B97009B0C9E /* Pods_Swift_Demo.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		814D072C22967BBE009B0C9E /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 814D072B22967BBE009B0C9E /* Alamofire.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		814D072E22967BBE009B0C9E /* HandyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 814D072D22967BBE009B0C9E /* HandyJSON.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -84,6 +85,7 @@
 		8107B8112271458A0054CB1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8107B829227147120054CB1D /* BaseTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabbarController.swift; sourceTree = "<group>"; };
 		814165DB228D5C2A001CABD5 /* HTTPRequset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequset.swift; sourceTree = "<group>"; };
+		8146A9C6229779E9008A21E4 /* MacroTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacroTool.swift; sourceTree = "<group>"; };
 		814D072722967B3B009B0C9E /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		814D072922967B97009B0C9E /* Pods_Swift_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_Swift_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		814D072B22967BBE009B0C9E /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -250,6 +252,7 @@
 		8107B823227146230054CB1D /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				8146A9C5229779E9008A21E4 /* MacroTool(宏相关) */,
 				814D07482296B95A009B0C9E /* ChangeTool(转换工具) */,
 				814DB209229287D3008584A9 /* Device(设备) */,
 				814EE113227E7FE50068F765 /* Animate(动画) */,
@@ -491,6 +494,14 @@
 				814165DB228D5C2A001CABD5 /* HTTPRequset.swift */,
 			);
 			path = "HTTPRequset(HTTP请求)";
+			sourceTree = "<group>";
+		};
+		8146A9C5229779E9008A21E4 /* MacroTool(宏相关) */ = {
+			isa = PBXGroup;
+			children = (
+				8146A9C6229779E9008A21E4 /* MacroTool.swift */,
+			);
+			path = "MacroTool(宏相关)";
 			sourceTree = "<group>";
 		};
 		814D07432296A39E009B0C9E /* VC(控制器) */ = {
@@ -902,6 +913,7 @@
 				8107B7F0227145890054CB1D /* AppDelegate.swift in Sources */,
 				814DB20522927C7B008584A9 /* HTTPApiManager.swift in Sources */,
 				814DB20822927EFB008584A9 /* HTTPUrlManager.swift in Sources */,
+				8146A9C7229779EA008A21E4 /* MacroTool.swift in Sources */,
 				81CFB047227304B500701D12 /* TradeMainVC.swift in Sources */,
 				814DB20B229287EF008584A9 /* DeviceTool.swift in Sources */,
 				81CFB05322730D1200701D12 /* OtherMainVC.swift in Sources */,
